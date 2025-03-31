@@ -1,0 +1,111 @@
+@import url(https://fonts.bunny.net/css?family=black-and-white-picture:400);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+header{
+  width: 100%;background: #522b2b;
+  height: 50px;
+  position: fixed;
+  top: 0;
+}
+.header-container{
+  height: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* logo */
+.logo a{
+  font-size: 2.5rem;
+  color: white;
+  font-family: 'Black And White Picture', sans-serif;
+  text-decoration: none;
+}
+/* main menu */
+.menu{
+  display: none;
+}
+.menu nav {
+  padding: 10px 15px;
+  margin: 0;
+  display: flex; 
+  gap: 15px; 
+}
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  background: #522b2b;
+}
+
+.menu ul li a:hover {
+  border-bottom: 3px solid;
+
+}
+
+/* Burger menue */
+.submenu {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+}
+.submenu ul {
+  display: none;
+  width: 150px;
+  background-color: #522b2b;
+  padding: 10px 20px;
+  
+
+  top: 30px;
+  left: -120px;
+}
+.submenu:hover ul {
+  display: block;
+  position: absolute;
+}
+
+.submenu ul li {
+  list-style: none;
+  margin-top: 5px;
+}
+.submenu ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.submenu ul li a:hover {
+  border-bottom: 3px solid;
+}
+
+@media (min-width:360px) {
+  .burger-menu{
+  display: none;
+}
+.menu{
+  display: block;
+}
+}
